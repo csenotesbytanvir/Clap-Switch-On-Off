@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clap ON / Clap OFF Switch 3D Circuit Simulator</title>
+    <meta name="description" content="Interactive 3D Clap ON / Clap OFF Switch Circuit Simulator with real-time electrical physics, oscilloscope, logic analyzer, and step-by-step educational breakdown." />
+    <meta property="og:title" content="Clap ON / Clap OFF Switch 3D Circuit Simulator" />
+    <meta property="og:description" content="Interactive 3D Clap ON / Clap OFF Switch Circuit Simulator with real-time electrical physics, oscilloscope, logic analyzer, and step-by-step educational breakdown." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        try {
+          var _rawFetch = typeof window !== 'undefined' && window.fetch ? window.fetch : null;
+          var _activeFetch = typeof _rawFetch === 'function' ? _rawFetch.bind(window) : _rawFetch;
+
+          function getFetch() {
+            return _activeFetch;
+          }
+          function setFetch(val) {
+            _activeFetch = val;
+          }
+
+          var targets = [];
+          if (typeof window !== 'undefined') targets.push(window);
+          if (typeof Window !== 'undefined' && Window.prototype) targets.push(Window.prototype);
+          if (typeof globalThis !== 'undefined' && targets.indexOf(globalThis) === -1) targets.push(globalThis);
+
+          targets.forEach(function(target) {
+            try {
+              Object.defineProperty(target, 'fetch', {
+                get: getFetch,
+                set: setFetch,
+                configurable: true,
+                enumerable: true
+              });
+            } catch (e) {
+              try {
+                target.fetch = _activeFetch;
+              } catch (e2) {}
+            }
+          });
+        } catch (err) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

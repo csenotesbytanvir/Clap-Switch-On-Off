@@ -1,0 +1,6 @@
+{
+  "name": "Clap ON / Clap OFF 3D Circuit Simulator",
+  "description": "A fully interactive 3D electronics laboratory simulator for the Clap ON / Clap OFF switch circuit with real-time signal flow, 555 timer monostable pulse, 7474 D flip-flop toggle, oscilloscope, and audio detection.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
